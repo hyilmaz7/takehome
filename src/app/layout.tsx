@@ -4,6 +4,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import Script from 'next/script'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import ConsentBanner from '../components/ConsentBanner'
 import './globals.css'
 
 const dmSans = DM_Sans({
@@ -66,6 +67,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${dmSans.variable} h-full antialiased`}>
       <head>
+        {/* Google Consent Mode v2 — default everything to denied until the user
+            chooses (or restore a previous choice). Must run before GA/AdSense. */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            var granted = false;
+            try { granted = localStorage.getItem('thp-consent') === 'granted'; } catch(e){}
+            gtag('consent', 'default', {
+              ad_storage: granted ? 'granted' : 'denied',
+              ad_user_data: granted ? 'granted' : 'denied',
+              ad_personalization: granted ? 'granted' : 'denied',
+              analytics_storage: granted ? 'granted' : 'denied',
+              wait_for_update: 500
+            });
+          `}
+        </Script>
         {adsenseId && (
           <Script
             async
@@ -79,6 +97,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ConsentBanner />
       </body>
       {gaId && <GoogleAnalytics gaId={gaId} />}
     </html>

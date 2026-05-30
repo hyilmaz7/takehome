@@ -18,11 +18,11 @@ export const metadata: Metadata = {
 }
 
 const US_EXAMPLES = [
-  { label: '$50K salary after tax', href: '/?gross=50000&country=us' },
-  { label: '$75K salary after tax', href: '/?gross=75000&country=us' },
-  { label: '$100K salary after tax', href: '/?gross=100000&country=us' },
-  { label: '$150K salary after tax', href: '/?gross=150000&country=us' },
-  { label: '$200K salary after tax', href: '/?gross=200000&country=us' },
+  { label: '$50K salary after tax', href: '/salary/50000' },
+  { label: '$75K salary after tax', href: '/salary/75000' },
+  { label: '$100K salary after tax', href: '/salary/100000' },
+  { label: '$150K salary after tax', href: '/salary/150000' },
+  { label: '$200K salary after tax', href: '/salary/200000' },
 ]
 
 export default function USPage() {

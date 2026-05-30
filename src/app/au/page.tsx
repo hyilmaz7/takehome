@@ -18,11 +18,11 @@ export const metadata: Metadata = {
 }
 
 const AU_EXAMPLES = [
-  { label: 'A$60K after tax', href: '/au?gross=60000' },
-  { label: 'A$80K after tax', href: '/au?gross=80000' },
-  { label: 'A$100K after tax', href: '/au?gross=100000' },
-  { label: 'A$120K after tax', href: '/au?gross=120000' },
-  { label: 'A$150K after tax', href: '/au?gross=150000' },
+  { label: 'A$60K after tax', href: '/salary/60000-au' },
+  { label: 'A$80K after tax', href: '/salary/80000-au' },
+  { label: 'A$100K after tax', href: '/salary/100000-au' },
+  { label: 'A$120K after tax', href: '/salary/120000-au' },
+  { label: 'A$150K after tax', href: '/salary/150000-au' },
 ]
 
 export default function AUPage() {

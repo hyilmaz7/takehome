@@ -26,6 +26,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   push('/hourly', 0.7)
   push('/reverse', 0.7)
   push('/compare', 0.7)
+  push('/about', 0.4)
+  push('/methodology', 0.5)
+  push('/contact', 0.3)
   push('/privacy', 0.3)
   push('/terms', 0.3)
 

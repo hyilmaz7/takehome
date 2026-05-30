@@ -18,13 +18,13 @@ export const metadata: Metadata = {
 }
 
 const UK_EXAMPLES = [
-  { label: '£25K after tax', href: '/uk?gross=25000' },
-  { label: '£30K after tax', href: '/uk?gross=30000' },
-  { label: '£40K after tax', href: '/uk?gross=40000' },
-  { label: '£50K after tax', href: '/uk?gross=50000' },
-  { label: '£60K after tax', href: '/uk?gross=60000' },
-  { label: '£80K after tax', href: '/uk?gross=80000' },
-  { label: '£100K after tax', href: '/uk?gross=100000' },
+  { label: '£25K after tax', href: '/salary/25000-uk' },
+  { label: '£30K after tax', href: '/salary/30000-uk' },
+  { label: '£40K after tax', href: '/salary/40000-uk' },
+  { label: '£50K after tax', href: '/salary/50000-uk' },
+  { label: '£60K after tax', href: '/salary/60000-uk' },
+  { label: '£80K after tax', href: '/salary/80000-uk' },
+  { label: '£100K after tax', href: '/salary/100000-uk' },
 ]
 
 export default function UKPage() {

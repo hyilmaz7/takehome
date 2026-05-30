@@ -5,6 +5,7 @@ import Hero from '../components/sections/Hero'
 import MoreCalculators from '../components/sections/MoreCalculators'
 import HowItWorks from '../components/sections/HowItWorks'
 import Faq from '../components/sections/Faq'
+import PopularExamples from '../components/sections/PopularExamples'
 import JsonLd from '../components/sections/JsonLd'
 import { faqPageJsonLd, webApplicationJsonLd } from '../lib/seo'
 import { US_FAQ } from '../lib/faq'
@@ -37,6 +38,22 @@ export default function HomePage() {
       </div>
 
       <MoreCalculators />
+
+      <PopularExamples
+        title="Popular salary lookups"
+        intro="Jump straight to a detailed after-tax breakdown for a specific salary."
+        examples={[
+          { label: '$50,000 after tax', href: '/salary/50000' },
+          { label: '$75,000 in California', href: '/salary/75000-california' },
+          { label: '$100,000 in Texas', href: '/salary/100000-texas' },
+          { label: '$100,000 in New York', href: '/salary/100000-new-york' },
+          { label: '$150,000 in California', href: '/salary/150000-california' },
+          { label: '$85,000 in Florida', href: '/salary/85000-florida' },
+          { label: '£40,000 (UK)', href: '/salary/40000-uk' },
+          { label: 'A$80,000 (Australia)', href: '/salary/80000-au' },
+        ]}
+      />
+
       <HowItWorks />
       <Faq items={US_FAQ} />
 

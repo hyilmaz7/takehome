@@ -8,7 +8,7 @@ import type { Country, PayPeriod } from '../types'
 declare global {
   interface Window {
     gtag?: (
-      command: 'event' | 'config' | 'set',
+      command: 'event' | 'config' | 'set' | 'consent',
       targetOrName: string,
       params?: Record<string, unknown>,
     ) => void

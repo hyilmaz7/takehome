@@ -37,7 +37,7 @@ export default function Footer() {
     <footer style={{ backgroundColor: 'var(--navy)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main grid */}
-        <div className="py-12 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+        <div className="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8">
           {/* Col 1 — Brand */}
           <div className="flex flex-col gap-4">
             <FooterLogo />
@@ -106,6 +106,37 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* Col 4 — Company */}
+          <div>
+            <h3
+              className="text-xs font-semibold uppercase tracking-widest mb-4"
+              style={{ color: 'rgba(255,255,255,0.35)' }}
+            >
+              Company
+            </h3>
+            <ul className="flex flex-col gap-2.5">
+              {[
+                { label: 'About', href: '/about' },
+                { label: 'Methodology', href: '/methodology' },
+                { label: 'Contact', href: '/contact' },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm transition-colors"
+                    style={{ color: 'rgba(255,255,255,0.65)' }}
+                    onMouseEnter={(e) => ((e.target as HTMLElement).style.color = '#fff')}
+                    onMouseLeave={(e) =>
+                      ((e.target as HTMLElement).style.color = 'rgba(255,255,255,0.65)')
+                    }
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Bottom bar */}
@@ -132,6 +163,14 @@ export default function Footer() {
             >
               Terms of Use
             </Link>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event('thp-open-consent'))}
+              className="transition-colors hover:text-white"
+              style={{ color: 'rgba(255,255,255,0.35)', cursor: 'pointer' }}
+            >
+              Cookie settings
+            </button>
           </div>
         </div>
       </div>
