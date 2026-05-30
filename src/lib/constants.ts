@@ -101,9 +101,9 @@ export const CHART_COLORS = {
 // ─── UK student loan plans ─────────────────────────────────────────────────
 export const UK_STUDENT_LOAN_PLANS = [
   { value: 'none',    label: 'None',     threshold: 0,     rate: 0    },
-  { value: 'plan1',   label: 'Plan 1',   threshold: 24990, rate: 0.09 },
-  { value: 'plan2',   label: 'Plan 2',   threshold: 27295, rate: 0.09 },
-  { value: 'plan4',   label: 'Plan 4',   threshold: 31395, rate: 0.09 },
+  { value: 'plan1',   label: 'Plan 1',   threshold: 26065, rate: 0.09 },
+  { value: 'plan2',   label: 'Plan 2',   threshold: 28470, rate: 0.09 },
+  { value: 'plan4',   label: 'Plan 4',   threshold: 32745, rate: 0.09 },
   { value: 'postgrad',label: 'Postgrad', threshold: 21000, rate: 0.06 },
 ] as const
 
@@ -127,7 +127,7 @@ export const DEFAULT_INPUTS: Record<Country, TaxInput> = {
   au: {
     grossAnnual: 80000,
     country: 'au',
-    superPercent: 11.5,
+    superPercent: 12,
     medicareExempt: false,
     hasPrivateHealth: false,
   },

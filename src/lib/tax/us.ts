@@ -11,37 +11,37 @@ const C = {
   other: '#F59E0B',
 } as const
 
-// ─── Federal income tax brackets 2026 ─────────────────────────────────────
+// ─── Federal income tax brackets 2025 ─────────────────────────────────────
 // Format: [upper_limit, rate]
 const US_FEDERAL_BRACKETS = {
   single: [
-    [11600, 0.10], [47150, 0.12], [100525, 0.22],
-    [191950, 0.24], [243725, 0.32], [609350, 0.35], [Infinity, 0.37],
+    [11925, 0.10], [48475, 0.12], [103350, 0.22],
+    [197300, 0.24], [250525, 0.32], [626350, 0.35], [Infinity, 0.37],
   ] as [number, number][],
   married_joint: [
-    [23200, 0.10], [94300, 0.12], [201050, 0.22],
-    [383900, 0.24], [487450, 0.32], [731200, 0.35], [Infinity, 0.37],
+    [23850, 0.10], [96950, 0.12], [206700, 0.22],
+    [394600, 0.24], [501050, 0.32], [751600, 0.35], [Infinity, 0.37],
   ] as [number, number][],
   married_separate: [
-    [11600, 0.10], [47150, 0.12], [100525, 0.22],
-    [191950, 0.24], [243725, 0.32], [609350, 0.35], [Infinity, 0.37],
+    [11925, 0.10], [48475, 0.12], [103350, 0.22],
+    [197300, 0.24], [250525, 0.32], [375800, 0.35], [Infinity, 0.37],
   ] as [number, number][],
   head_of_household: [
-    [16550, 0.10], [63100, 0.12], [100500, 0.22],
-    [191950, 0.24], [243700, 0.32], [609350, 0.35], [Infinity, 0.37],
+    [17000, 0.10], [64850, 0.12], [103350, 0.22],
+    [197300, 0.24], [250500, 0.32], [626350, 0.35], [Infinity, 0.37],
   ] as [number, number][],
 }
 
-// ─── Standard deductions 2026 ──────────────────────────────────────────────
+// ─── Standard deductions 2025 ──────────────────────────────────────────────
 const STANDARD_DEDUCTION = {
-  single: 14600,
-  married_joint: 29200,
-  married_separate: 14600,
-  head_of_household: 21900,
+  single: 15000,
+  married_joint: 30000,
+  married_separate: 15000,
+  head_of_household: 22500,
 }
 
-// ─── FICA constants 2026 ───────────────────────────────────────────────────
-const SS_WAGE_BASE = 168600
+// ─── FICA constants 2025 ───────────────────────────────────────────────────
+const SS_WAGE_BASE = 176100
 const SS_RATE = 0.062
 const MEDICARE_RATE = 0.0145
 const ADDITIONAL_MEDICARE_RATE = 0.009

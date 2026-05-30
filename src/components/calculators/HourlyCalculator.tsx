@@ -11,7 +11,7 @@ import SliderField from '../ui/SliderField'
 import ResultCard from '../ui/ResultCard'
 import ShareButtons from '../ui/ShareButtons'
 
-// ─── Minimum wages per country (2026 approx) ──────────────────────────────
+// ─── Minimum wages per country (2025 approx) ──────────────────────────────
 const MIN_WAGES: Record<Country, { hourly: number; label: string }> = {
   us: { hourly: 7.25,  label: 'US federal minimum wage ($7.25/hr)' },
   uk: { hourly: 11.44, label: 'National Living Wage (£11.44/hr)' },

@@ -9,26 +9,26 @@ const C = {
   ei: '#A78BFA',
 } as const
 
-// ─── Federal brackets 2026 — [upper_limit, rate] ──────────────────────────
+// ─── Federal brackets 2025 — [upper_limit, rate] ──────────────────────────
 const FEDERAL_BRACKETS: [number, number][] = [
   [57375, 0.15],
   [114750, 0.205],
-  [158519, 0.26],
-  [220000, 0.29],
+  [177882, 0.26],
+  [253414, 0.29],
   [Infinity, 0.33],
 ]
 
-const FEDERAL_BPA = 16129          // Basic Personal Amount 2026
+const FEDERAL_BPA = 16129          // Basic Personal Amount 2025
 const FEDERAL_BPA_CREDIT = FEDERAL_BPA * 0.15  // $2,419.35
 
-// ─── CPP / EI 2026 ────────────────────────────────────────────────────────
+// ─── CPP / EI 2025 ────────────────────────────────────────────────────────
 const CPP_EXEMPTION = 3500
-const CPP_YMPE = 68500             // Year's Maximum Pensionable Earnings
+const CPP_YMPE = 71300             // Year's Maximum Pensionable Earnings (2025)
 const CPP_RATE = 0.0595
-const CPP2_UPPER = 73200           // Additional YMPE for CPP2
+const CPP2_UPPER = 81200           // Second earnings ceiling (YAMPE) for CPP2 (2025)
 const CPP2_RATE = 0.04
-const EI_MAX_INSURABLE = 63200
-const EI_RATE = 0.0166
+const EI_MAX_INSURABLE = 65700
+const EI_RATE = 0.0164
 
 // ─── Provincial data ───────────────────────────────────────────────────────
 interface ProvinceData {
@@ -101,7 +101,7 @@ const PROVINCES: Record<string, ProvinceData> = {
   },
   YT: {
     name: 'Yukon',
-    brackets: [[57375, 0.064],[114750, 0.09],[158519, 0.109],[500000, 0.128],[Infinity, 0.15]],
+    brackets: [[57375, 0.064],[114750, 0.09],[177882, 0.109],[500000, 0.128],[Infinity, 0.15]],
     bpa: 15705, lowestRate: 0.064,
   },
 }

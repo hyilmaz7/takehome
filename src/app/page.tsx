@@ -10,9 +10,9 @@ import { faqPageJsonLd, webApplicationJsonLd } from '../lib/seo'
 import { US_FAQ } from '../lib/faq'
 
 export const metadata: Metadata = {
-  title: 'US Salary Calculator 2026 — Take-Home Pay After Tax',
+  title: 'US Salary Calculator 2025 — Take-Home Pay After Tax',
   description:
-    'Calculate your exact US take-home pay after federal tax, state tax and FICA. Free real-time salary calculator for all 50 states. Updated for 2026 tax rates.',
+    'Calculate your exact US take-home pay after federal tax, state tax and FICA. Free real-time salary calculator for all 50 states. Updated for 2025 tax rates.',
   alternates: { canonical: '/' },
 }
 
@@ -22,7 +22,7 @@ export default function HomePage() {
       <Hero
         eyebrow="Free · No signup · Real-time results"
         title="What's your actual take-home pay?"
-        subheading="See your net salary instantly after federal, state & local taxes. Updated for the 2026 tax year."
+        subheading="See your net salary instantly after federal, state & local taxes. Updated for the 2025 tax year."
         titleId="home-title"
       />
 

@@ -19,7 +19,7 @@ export default function ReversePage() {
       <Hero
         eyebrow="Reverse calculation · Real-time results"
         title="What gross salary do I need?"
-        subheading="Tell us the take-home pay you want and we'll work backwards through the 2026 tax brackets to find the gross salary you need to earn."
+        subheading="Tell us the take-home pay you want and we'll work backwards through the 2025 tax brackets to find the gross salary you need to earn."
         titleId="reverse-title"
       />
 

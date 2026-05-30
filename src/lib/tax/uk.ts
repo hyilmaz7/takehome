@@ -58,9 +58,9 @@ const NI_UPPER_RATE = 0.02           // 2% above UEL
 
 // ─── Student loan repayment thresholds 2026/27 ────────────────────────────
 const STUDENT_LOAN_PLANS = {
-  plan1:   { threshold: 24990, rate: 0.09 },
-  plan2:   { threshold: 27295, rate: 0.09 },
-  plan4:   { threshold: 31395, rate: 0.09 },
+  plan1:   { threshold: 26065, rate: 0.09 },
+  plan2:   { threshold: 28470, rate: 0.09 },
+  plan4:   { threshold: 32745, rate: 0.09 },
   postgrad: { threshold: 21000, rate: 0.06 },
 }
 

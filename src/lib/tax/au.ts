@@ -13,9 +13,9 @@ const C = {
 // [upper_income_limit, marginal_rate]
 const AU_BRACKETS: [number, number][] = [
   [18200, 0],
-  [45000, 0.19],
-  [120000, 0.325],
-  [180000, 0.37],
+  [45000, 0.16],
+  [135000, 0.30],
+  [190000, 0.37],
   [Infinity, 0.45],
 ]
 
@@ -86,7 +86,7 @@ export function calculateAU(input: TaxInput): TaxBreakdown {
     grossAnnual,
     medicareExempt = false,
     hasPrivateHealth = false,
-    superPercent = 11.5,
+    superPercent = 12,
   } = input
 
   const gross = Math.max(0, grossAnnual)

@@ -26,6 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   push('/hourly', 0.7)
   push('/reverse', 0.7)
   push('/compare', 0.7)
+  push('/privacy', 0.3)
+  push('/terms', 0.3)
 
   // Programmatic salary landing pages (the SEO long tail)
   for (const amount of US_SALARY_AMOUNTS) {

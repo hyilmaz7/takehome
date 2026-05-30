@@ -224,7 +224,7 @@ function USInputs({ inputs, update }: { inputs: TaxInput; update: UpdateFn }) {
         <Toggle
           checked={hsaOn}
           onChange={(v) => update('hsaContribution', v ? 4300 : 0)}
-          label="HSA contribution — $4,300/yr self-only limit (2026)"
+          label="HSA contribution — $4,300/yr self-only limit (2025)"
         />
       </div>
     </div>
@@ -340,14 +340,14 @@ function AUInputs({ inputs, update }: { inputs: TaxInput; update: UpdateFn }) {
             Paid on top of your salary — not deducted from take-home
           </p>
         </div>
-        <span className="badge badge-sky shrink-0 ml-3">11.5% compulsory</span>
+        <span className="badge badge-sky shrink-0 ml-3">12% compulsory</span>
       </div>
     </div>
   )
 }
 
 function CAInputs({ inputs, update }: { inputs: TaxInput; update: UpdateFn }) {
-  const showCPP2Note = inputs.cpp2 && (inputs.grossAnnual ?? 0) < 68500
+  const showCPP2Note = inputs.cpp2 && (inputs.grossAnnual ?? 0) < 71300
 
   return (
     <div className="flex flex-col gap-5">
@@ -374,14 +374,14 @@ function CAInputs({ inputs, update }: { inputs: TaxInput; update: UpdateFn }) {
           label="CPP2 contribution applies"
         />
         <p className="text-xs pl-13" style={{ color: 'var(--slate-500)', paddingLeft: '52px' }}>
-          Additional 4% on earnings between $68,500 and $73,200 (2026)
+          Additional 4% on earnings between $71,300 and $81,200 (2025)
         </p>
         {showCPP2Note && (
           <p
             className="text-xs rounded-xl px-3 py-2 ml-0"
             style={{ backgroundColor: '#fef9ec', color: '#92400e' }}
           >
-            CPP2 only applies when earnings exceed $68,500
+            CPP2 only applies when earnings exceed $71,300
           </p>
         )}
       </div>
@@ -399,7 +399,7 @@ const DEDUCTION_EXPLANATIONS: Record<
     {
       match: 'Federal',
       color: '#EF4444',
-      text: 'Progressive federal tax using 2026 brackets (10%–37%). Applied to taxable income after the standard deduction and pre-tax contributions.',
+      text: 'Progressive federal tax using 2025 brackets (10%–37%). Applied to taxable income after the standard deduction and pre-tax contributions.',
     },
     {
       match: 'State',
@@ -409,7 +409,7 @@ const DEDUCTION_EXPLANATIONS: Record<
     {
       match: 'Social Security',
       color: '#8B5CF6',
-      text: '6.2% of wages up to $168,600 (2026 wage base). Funds retirement, disability, and survivor benefits.',
+      text: '6.2% of wages up to $176,100 (2025 wage base). Funds retirement, disability, and survivor benefits.',
     },
     {
       match: 'Medicare',
@@ -446,7 +446,7 @@ const DEDUCTION_EXPLANATIONS: Record<
     {
       match: 'Student Loan',
       color: '#F59E0B',
-      text: 'Repaid as a percentage of income above the relevant threshold. Plan 2 threshold: £27,295 at 9%. Postgrad: £21,000 at 6%. Not a tax but collected alongside PAYE.',
+      text: 'Repaid as a percentage of income above the relevant threshold. Plan 2 threshold: £28,470 at 9%. Postgrad: £21,000 at 6%. Not a tax but collected alongside PAYE.',
     },
   ],
   au: [
@@ -480,12 +480,12 @@ const DEDUCTION_EXPLANATIONS: Record<
     {
       match: 'CPP',
       color: '#8B5CF6',
-      text: 'Canada Pension Plan: 5.95% on earnings between $3,500–$68,500. CPP2 adds 4% on the next $4,700 (up to $73,200). Both contributions qualify for tax credits.',
+      text: 'Canada Pension Plan: 5.95% on earnings between $3,500–$71,300. CPP2 adds 4% on the next $9,900 (up to $81,200). Both contributions qualify for tax credits.',
     },
     {
       match: 'EI',
       color: '#A78BFA',
-      text: 'Employment Insurance premiums: 1.66% on insurable earnings up to $63,200. Provides temporary income support for job loss, illness, or parental leave.',
+      text: 'Employment Insurance premiums: 1.64% on insurable earnings up to $65,700. Provides temporary income support for job loss, illness, or parental leave.',
     },
   ],
 }
@@ -657,7 +657,7 @@ function CalculationFlow({
                 borderTop: '1px solid var(--slate-100)',
               }}
             >
-              Estimates use 2026 tax rates. Individual circumstances vary. Not
+              Estimates use the latest 2025 tax rates. Individual circumstances vary. Not
               financial advice.
             </p>
           </div>

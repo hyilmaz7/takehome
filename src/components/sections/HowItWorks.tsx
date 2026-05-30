@@ -15,7 +15,7 @@ const STEPS: {
     icon: Calculator,
     title: 'We calculate your exact taxes',
     description:
-      'We apply the latest 2026 income tax brackets, FICA and local rates to your income in real time.',
+      'We apply the latest income tax brackets, FICA and local rates to your income in real time.',
   },
   {
     icon: Wallet,

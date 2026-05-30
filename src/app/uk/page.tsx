@@ -11,9 +11,9 @@ import { faqPageJsonLd, webApplicationJsonLd } from '../../lib/seo'
 import { UK_FAQ } from '../../lib/faq'
 
 export const metadata: Metadata = {
-  title: 'UK Salary Calculator 2026/27 — Income Tax & NI Calculator',
+  title: 'UK Salary Calculator 2025/26 — Income Tax & NI Calculator',
   description:
-    'Calculate your UK take-home pay for the 2026/27 tax year. Includes income tax, National Insurance, student loan and pension deductions.',
+    'Calculate your UK take-home pay for the 2025/26 tax year. Includes income tax, National Insurance, student loan and pension deductions.',
   alternates: { canonical: '/uk' },
 }
 
@@ -31,9 +31,9 @@ export default function UKPage() {
   return (
     <>
       <Hero
-        eyebrow="United Kingdom · 2026/27 tax year"
+        eyebrow="United Kingdom · 2025/26 tax year"
         title="UK Salary Calculator — income tax & National Insurance"
-        subheading="See your take-home pay after income tax, National Insurance, student loan and pension. Updated for the 2026/27 tax year."
+        subheading="See your take-home pay after income tax, National Insurance, student loan and pension. Updated for the 2025/26 tax year."
         titleId="uk-title"
       />
 
@@ -58,7 +58,7 @@ export default function UKPage() {
         <div className="flex flex-col gap-4 text-sm leading-relaxed" style={{ color: 'var(--slate-600)' }}>
           <p>
             UK take-home pay is your gross salary minus income tax, National Insurance and any pension
-            or student loan deductions. For 2026/27 the personal allowance is £12,570 — earn less than
+            or student loan deductions. For 2025/26 the personal allowance is £12,570 — earn less than
             that and you pay no income tax. Above it, the basic rate of 20% applies up to £50,270, the
             higher rate of 40% up to £125,140, and the additional rate of 45% above that.
           </p>

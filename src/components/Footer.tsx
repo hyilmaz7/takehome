@@ -116,7 +116,7 @@ export default function Footer() {
             color: 'rgba(255,255,255,0.35)',
           }}
         >
-          <p>Updated for 2026 tax year · Not financial advice</p>
+          <p>Updated for the 2025 tax year · Not financial advice</p>
           <div className="flex items-center gap-4">
             <Link
               href="/privacy"

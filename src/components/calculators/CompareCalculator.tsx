@@ -366,7 +366,7 @@ export default function CompareCalculator() {
         )}
 
         <p className="text-xs text-center" style={{ color: 'var(--slate-400)' }}>
-          Comparisons across different countries use each offer’s local currency and 2026 tax rates.
+          Comparisons across different countries use each offer’s local currency and current tax rates.
         </p>
       </div>
     </div>

@@ -66,7 +66,7 @@ export default function AUPage() {
             private hospital cover — taking out an appropriate policy removes it.
           </p>
           <p>
-            Superannuation is paid by your employer on top of your salary at 11.5% for 2025/26, so it
+            Superannuation is paid by your employer on top of your salary at 12% for 2025/26, so it
             does not reduce your take-home pay. This calculator shows your net pay after income tax
             and the Medicare Levy, and notes your employer super contribution separately.
           </p>

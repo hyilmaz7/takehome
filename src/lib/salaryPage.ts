@@ -85,10 +85,10 @@ export function inputForSalary(parsed: ParsedSalary): TaxInput {
 // ─── Labels ──────────────────────────────────────────────────────────────────
 
 const TAX_YEAR: Record<Country, string> = {
-  us: '2026',
-  uk: '2026/27',
+  us: '2025',
+  uk: '2025/26',
   au: '2025/26',
-  ca: '2026',
+  ca: '2025',
 }
 
 export function taxYearLabel(country: Country): string {
@@ -106,7 +106,7 @@ export function regionLabel(parsed: ParsedSalary): string {
   }
 }
 
-/** The page H1 / title subject, e.g. "$85,000 Salary After Tax in California (2026)". */
+/** The page H1 / title subject, e.g. "$85,000 Salary After Tax in California (2025)". */
 export function salaryHeadline(parsed: ParsedSalary): string {
   const amount = formatCurrency(parsed.amount, parsed.country)
   return `${amount} Salary After Tax in ${regionLabel(parsed)} (${taxYearLabel(parsed.country)})`
@@ -163,10 +163,10 @@ export function salaryMetaDescription(parsed: ParsedSalary, b: TaxBreakdown): st
     return `Take-home pay on a ${gross} salary in ${region}: ${netMonthly}/month after federal income tax (${money(b.federalTax)}) and FICA (${money(fica)}). See the full breakdown.`
   }
   if (c === 'uk') {
-    return `Take-home pay on a ${gross} salary in the UK: ${netMonthly}/month after income tax (${money(b.federalTax)}) and National Insurance (${money(b.stateTax)}). Full 2026/27 breakdown.`
+    return `Take-home pay on a ${gross} salary in the UK: ${netMonthly}/month after income tax (${money(b.federalTax)}) and National Insurance (${money(b.stateTax)}). Full 2025/26 breakdown.`
   }
   if (c === 'au') {
     return `Take-home pay on a ${gross} salary in Australia: ${netMonthly}/month after income tax (${money(b.federalTax)}) and the Medicare Levy (${money(b.stateTax)}). Full 2025/26 breakdown.`
   }
-  return `Take-home pay on a ${gross} salary in Canada: ${netMonthly}/month after federal and provincial tax plus CPP and EI. Full 2026 breakdown.`
+  return `Take-home pay on a ${gross} salary in Canada: ${netMonthly}/month after federal and provincial tax plus CPP and EI. Full 2025 breakdown.`
 }

@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const b = breakdownForRate(rate)
   const rateStr = formatCurrency(rate, 'us')
   return {
-    title: `${rateStr} an Hour After Tax — Take-Home Pay (2026)`,
+    title: `${rateStr} an Hour After Tax — Take-Home Pay (2025)`,
     description: `${rateStr} an hour is ${formatCurrency(b.grossAnnual, 'us')} a year. After federal tax and FICA your take-home pay is ${formatCurrency(Math.round(b.netAnnual), 'us')}/year (${formatCurrency(Math.round(b.netAnnual / 12), 'us')}/month). See the full breakdown.`,
     alternates: { canonical: `/hourly/${rateSlug}` },
   }
@@ -87,7 +87,7 @@ export default async function HourlyRatePage({ params }: Props) {
   const netYr = formatCurrency(Math.round(breakdown.netAnnual), 'us')
   const netMo = formatCurrency(Math.round(breakdown.netAnnual / 12), 'us')
 
-  const headline = `${rateStr} an Hour After Tax (2026)`
+  const headline = `${rateStr} an Hour After Tax (2025)`
   const answer = `Working ${HOURS_PER_WEEK} hours a week at ${rateStr} an hour is ${grossStr} a year. After federal income tax, Social Security and Medicare, your take-home pay is about ${netYr} a year (${netMo} a month). Your effective tax rate is ${formatPercent(breakdown.effectiveTaxRate)}. Add your state in the calculator above for an exact figure.`
 
   const faq = faqPageJsonLd([
