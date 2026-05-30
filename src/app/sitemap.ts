@@ -7,6 +7,7 @@ import {
   HOURLY_RATES,
   stateCodeToSlug,
 } from '../lib/salaryPage'
+import { GUIDES } from '../lib/guides'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://takehomepay.io'
 
@@ -31,6 +32,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   push('/contact', 0.3)
   push('/privacy', 0.3)
   push('/terms', 0.3)
+
+  // Content hub
+  push('/guides', 0.6)
+  push('/take-home-by-state', 0.6)
+  for (const g of GUIDES) push(`/guides/${g.slug}`, 0.6)
 
   // Programmatic salary landing pages (the SEO long tail)
   for (const amount of US_SALARY_AMOUNTS) {

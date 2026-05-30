@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { label: 'Hourly', href: '/hourly' },
   { label: 'Compare Jobs', href: '/compare' },
   { label: 'Reverse Calc', href: '/reverse' },
+  { label: 'Guides', href: '/guides' },
 ]
 
 const COUNTRIES = [

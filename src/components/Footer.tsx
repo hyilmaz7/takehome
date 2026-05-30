@@ -117,6 +117,8 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-2.5">
               {[
+                { label: 'Guides', href: '/guides' },
+                { label: 'Take-home by state', href: '/take-home-by-state' },
                 { label: 'About', href: '/about' },
                 { label: 'Methodology', href: '/methodology' },
                 { label: 'Contact', href: '/contact' },
