@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, BarChart3 } from 'lucide-react'
+import { ArrowRight, BarChart3, Globe } from 'lucide-react'
 import { GUIDES } from '../../lib/guides'
 
 export const metadata: Metadata = {
@@ -20,27 +20,50 @@ export default function GuidesPage() {
         Clear, no-jargon explanations of how your pay is taxed — and how to keep more of it.
       </p>
 
-      {/* Featured data resource */}
-      <Link
-        href="/take-home-by-state"
-        className="card group flex items-center gap-4 mt-8 transition-shadow hover:shadow-md"
-      >
-        <span
-          className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
-          style={{ backgroundColor: 'var(--sky-pale)', color: 'var(--sky)' }}
+      {/* Featured data resources */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+        <Link
+          href="/take-home-by-state"
+          className="card group flex items-center gap-4 transition-shadow hover:shadow-md"
         >
-          <BarChart3 className="w-6 h-6" />
-        </span>
-        <div className="flex-1">
-          <h2 className="text-base font-semibold" style={{ color: 'var(--navy)' }}>
-            Take-Home Pay by US State
-          </h2>
-          <p className="text-sm mt-0.5" style={{ color: 'var(--slate-500)' }}>
-            All 50 states ranked by what you actually keep on a $100,000 salary.
-          </p>
-        </div>
-        <ArrowRight className="w-4 h-4 shrink-0" style={{ color: 'var(--sky)' }} />
-      </Link>
+          <span
+            className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+            style={{ backgroundColor: 'var(--sky-pale)', color: 'var(--sky)' }}
+          >
+            <BarChart3 className="w-6 h-6" />
+          </span>
+          <div className="flex-1">
+            <h2 className="text-base font-semibold" style={{ color: 'var(--navy)' }}>
+              Take-Home Pay by US State
+            </h2>
+            <p className="text-sm mt-0.5" style={{ color: 'var(--slate-500)' }}>
+              All 50 states ranked on a $100,000 salary.
+            </p>
+          </div>
+          <ArrowRight className="w-4 h-4 shrink-0" style={{ color: 'var(--sky)' }} />
+        </Link>
+
+        <Link
+          href="/take-home-by-country"
+          className="card group flex items-center gap-4 transition-shadow hover:shadow-md"
+        >
+          <span
+            className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+            style={{ backgroundColor: 'var(--sky-pale)', color: 'var(--sky)' }}
+          >
+            <Globe className="w-6 h-6" />
+          </span>
+          <div className="flex-1">
+            <h2 className="text-base font-semibold" style={{ color: 'var(--navy)' }}>
+              Take-Home Pay by Country
+            </h2>
+            <p className="text-sm mt-0.5" style={{ color: 'var(--slate-500)' }}>
+              US vs UK vs Australia vs Canada, compared.
+            </p>
+          </div>
+          <ArrowRight className="w-4 h-4 shrink-0" style={{ color: 'var(--sky)' }} />
+        </Link>
+      </div>
 
       {/* Article list */}
       <div className="flex flex-col gap-4 mt-6">

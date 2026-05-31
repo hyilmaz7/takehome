@@ -201,6 +201,36 @@ export const GUIDES: Guide[] = [
     date: '2026-05-31',
     readMins: 6,
   },
+  {
+    slug: 'us-vs-canada-salary',
+    title: 'US vs Canada Salary: Who Takes Home More?',
+    description:
+      'Americans keep a higher share of the same nominal salary than Canadians — but US health insurance, state taxes and the exchange rate change the story. A real comparison.',
+    excerpt:
+      'On the same 100k salary, a US worker keeps more after tax than a Canadian — until you add health insurance and a high-tax state. Here’s the full picture.',
+    date: '2026-05-31',
+    readMins: 6,
+  },
+  {
+    slug: 'uk-vs-australia-salary',
+    title: 'UK vs Australia Salary: Who Takes Home More?',
+    description:
+      'Australians keep noticeably more of a 100k salary than Brits — plus 12% superannuation on top. For the UK→Australia move, here’s what changes about your take-home pay.',
+    excerpt:
+      'One of the world’s biggest migration corridors, and the take-home maths favours Australia: ~77% vs ~69%, plus super on top.',
+    date: '2026-05-31',
+    readMins: 6,
+  },
+  {
+    slug: 'australia-vs-canada-salary',
+    title: 'Australia vs Canada Salary: Who Takes Home More?',
+    description:
+      'Australia and Canada are close on take-home pay, but Australia edges it — and adds 12% super on top. A head-to-head for anyone weighing the two.',
+    excerpt:
+      'Two popular expat destinations, neck and neck on tax — but Australia keeps slightly more and stacks superannuation on top.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
 ]
 
 export function getGuide(slug: string): Guide | undefined {

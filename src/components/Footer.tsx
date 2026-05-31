@@ -123,6 +123,7 @@ export default function Footer() {
               {[
                 { label: 'Guides', href: '/guides' },
                 { label: 'Take-home by state', href: '/take-home-by-state' },
+                { label: 'Take-home by country', href: '/take-home-by-country' },
                 { label: 'Embed widget', href: '/widget' },
                 { label: 'About', href: '/about' },
                 { label: 'Methodology', href: '/methodology' },
