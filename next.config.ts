@@ -12,7 +12,7 @@ const cspBase = [
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "img-src 'self' data: blob: https:",
   "font-src 'self' data: https://fonts.gstatic.com",
-  "frame-src https://*.googlesyndication.com https://*.g.doubleclick.net https://*.doubleclick.net https://www.google.com",
+  "frame-src 'self' https://*.googlesyndication.com https://*.g.doubleclick.net https://*.doubleclick.net https://www.google.com",
   "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.googlesyndication.com https://*.g.doubleclick.net",
 ]
 
