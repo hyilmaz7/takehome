@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Methodology & Sources',
   description:
-    'How TakeHomePay.io calculates take-home pay: the tax years, official sources (IRS, HMRC, ATO, CRA), assumptions and limitations behind every result.',
+    'How SalaryCalc calculates take-home pay: the tax years, official sources (IRS, HMRC, ATO, CRA), assumptions and limitations behind every result.',
   alternates: { canonical: '/methodology' },
 }
 

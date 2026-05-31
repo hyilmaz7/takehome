@@ -43,8 +43,8 @@ function Logo() {
         className="font-semibold text-[17px] tracking-tight"
         style={{ color: 'var(--navy)' }}
       >
-        TakeHomePay
-        <span style={{ color: 'var(--sky)' }}>.io</span>
+        Salary
+        <span style={{ color: 'var(--sky)' }}>Calc</span>
       </span>
     </Link>
   )

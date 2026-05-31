@@ -26,7 +26,7 @@ function FooterLogo() {
         $
       </div>
       <span className="font-semibold text-[17px] tracking-tight text-white">
-        TakeHomePay<span style={{ color: '#0EA5E9' }}>.io</span>
+        Salary<span style={{ color: '#0EA5E9' }}>Calc</span>
       </span>
     </div>
   )

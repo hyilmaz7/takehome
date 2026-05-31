@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms of Use',
   description:
-    'The terms governing use of TakeHomePay.io. Results are estimates for informational purposes only and are not financial, tax or legal advice.',
+    'The terms governing use of SalaryCalc. Results are estimates for informational purposes only and are not financial, tax or legal advice.',
   alternates: { canonical: '/terms' },
 }
 
@@ -36,7 +36,7 @@ export default function TermsPage() {
       </p>
 
       <P>
-        By using TakeHomePay.io (the “site”) you agree to these terms. If you do not agree, please do
+        By using SalaryCalc (the “site”) you agree to these terms. If you do not agree, please do
         not use the site.
       </P>
 
@@ -98,8 +98,8 @@ export default function TermsPage() {
       <H2>Contact</H2>
       <P>
         Questions? Email{' '}
-        <a href="mailto:hello@takehomepay.io" className="underline" style={{ color: 'var(--sky)' }}>
-          hello@takehomepay.io
+        <a href="mailto:hello@salarycalcnet.com" className="underline" style={{ color: 'var(--sky)' }}>
+          hello@salarycalcnet.com
         </a>
         .
       </P>

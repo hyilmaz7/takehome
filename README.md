@@ -1,4 +1,4 @@
-# TakeHomePay.io
+# SalaryCalc
 
 A free, real-time salary & tax calculator for the **US, UK, Australia and Canada**. Built with Next.js 16 (App Router, Turbopack), React 19 and Tailwind CSS v4. No signup, instant results, and a programmatic-SEO layer of ~300 pre-rendered salary/hourly landing pages.
 
@@ -36,7 +36,7 @@ npm run lint         # ESLint only
 Create a `.env.local` (see [IDs](#adsense--google-analytics-ids)):
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://takehomepay.io
+NEXT_PUBLIC_SITE_URL=https://salarycalcnet.com
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 NEXT_PUBLIC_ADSENSE_ID=ca-pub-XXXXXXXXXX
 ```

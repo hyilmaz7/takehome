@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react'
 import { getGuide, GUIDES } from '../../lib/guides'
 import JsonLd from './JsonLd'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://takehomepay.io'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
@@ -20,8 +20,8 @@ export default function Article({ slug, children }: { slug: string; children: Re
     description: guide.description,
     datePublished: guide.date,
     dateModified: guide.date,
-    author: { '@type': 'Organization', name: 'TakeHomePay.io', url: SITE_URL },
-    publisher: { '@type': 'Organization', name: 'TakeHomePay.io', url: SITE_URL },
+    author: { '@type': 'Organization', name: 'SalaryCalc', url: SITE_URL },
+    publisher: { '@type': 'Organization', name: 'SalaryCalc', url: SITE_URL },
     mainEntityOfPage: `${SITE_URL}/guides/${guide.slug}`,
   }
 

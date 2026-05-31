@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'TakeHomePay.io is a free, no-signup salary and tax calculator for the US, UK, Australia and Canada, built for accuracy and transparency.',
+    'SalaryCalc is a free, no-signup salary and tax calculator for the US, UK, Australia and Canada, built for accuracy and transparency.',
   alternates: { canonical: '/about' },
 }
 
@@ -18,9 +18,9 @@ function P({ children }: { children: React.ReactNode }) {
 export default function AboutPage() {
   return (
     <article className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
-      <h1 className="text-3xl font-medium" style={{ color: 'var(--navy)' }}>About TakeHomePay.io</h1>
+      <h1 className="text-3xl font-medium" style={{ color: 'var(--navy)' }}>About SalaryCalc</h1>
       <p className="text-sm mt-3 leading-relaxed" style={{ color: 'var(--slate-600)' }}>
-        TakeHomePay.io helps you understand your real, after-tax income in seconds — no signup, no
+        SalaryCalc helps you understand your real, after-tax income in seconds — no signup, no
         paywall, just instant results for the United States, United Kingdom, Australia and Canada.
       </p>
 

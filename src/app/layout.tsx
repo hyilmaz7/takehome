@@ -16,14 +16,14 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | TakeHomePay.io',
-    default: 'TakeHomePay.io — Free Salary & Tax Calculator',
+    template: '%s | SalaryCalc',
+    default: 'SalaryCalc — Free Salary & Tax Calculator',
   },
   description:
     'Calculate your exact take-home pay after tax. Free salary calculator for US, UK, Australia and Canada. Real-time results, no signup required.',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://takehomepay.io'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'),
   openGraph: {
-    siteName: 'TakeHomePay.io',
+    siteName: 'SalaryCalc',
     type: 'website',
     locale: 'en_US',
     images: [
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'TakeHomePay.io — Free Salary & Tax Calculator',
+        alt: 'SalaryCalc — Free Salary & Tax Calculator',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TakeHomePay.io — Free Salary & Tax Calculator',
+    title: 'SalaryCalc — Free Salary & Tax Calculator',
     description:
       'Calculate your exact take-home pay after tax. Real-time results for US, UK, Australia & Canada.',
   },

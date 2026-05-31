@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Get in touch with TakeHomePay.io — corrections, feedback, feature requests, press and partnerships.',
+  description: 'Get in touch with SalaryCalc — corrections, feedback, feature requests, press and partnerships.',
   alternates: { canonical: '/contact' },
 }
 
@@ -22,11 +22,11 @@ export default function ContactPage() {
       </p>
 
       <a
-        href="mailto:hello@takehomepay.io"
+        href="mailto:hello@salarycalcnet.com"
         className="inline-flex items-center mt-4 px-5 py-3 rounded-xl text-sm font-semibold"
         style={{ backgroundColor: 'var(--navy)', color: '#fff' }}
       >
-        hello@takehomepay.io
+        hello@salarycalcnet.com
       </a>
 
       <H2>What to reach out about</H2>

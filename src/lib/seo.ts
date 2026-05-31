@@ -6,7 +6,7 @@ export interface FaqEntry {
   a: string
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://takehomepay.io'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
 
 /** schema.org FAQPage built from the same Q&A list rendered on the page. */
 export function faqPageJsonLd(items: FaqEntry[]) {
@@ -29,7 +29,7 @@ export function webApplicationJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'TakeHomePay.io',
+    name: 'SalaryCalc',
     url: SITE_URL,
     applicationCategory: 'FinanceApplication',
     operatingSystem: 'Web',

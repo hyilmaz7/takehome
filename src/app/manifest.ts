@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'TakeHomePay.io',
-    short_name: 'TakeHomePay',
+    name: 'SalaryCalc',
+    short_name: 'SalaryCalc',
     description:
       'Free real-time salary and tax calculator for the US, UK, Australia and Canada.',
     start_url: '/',

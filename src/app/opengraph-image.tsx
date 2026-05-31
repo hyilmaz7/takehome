@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
 
-export const alt = 'TakeHomePay.io — Free salary calculator for US, UK, Australia & Canada'
+export const alt = 'SalaryCalc — Free salary calculator for US, UK, Australia & Canada'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -45,8 +45,8 @@ export default function OpengraphImage() {
 
         {/* Wordmark */}
         <div style={{ display: 'flex', alignItems: 'baseline', fontSize: 76, fontWeight: 700 }}>
-          <span style={{ color: '#FFFFFF' }}>TakeHomePay</span>
-          <span style={{ color: SKY }}>.io</span>
+          <span style={{ color: '#FFFFFF' }}>Salary</span>
+          <span style={{ color: SKY }}>Calc</span>
         </div>
 
         {/* Tagline */}

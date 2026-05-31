@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'How TakeHomePay.io handles data, cookies, analytics and advertising. We do not store your salary inputs on our servers.',
+    'How SalaryCalc handles data, cookies, analytics and advertising. We do not store your salary inputs on our servers.',
   alternates: { canonical: '/privacy' },
 }
 
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
       </p>
 
       <P>
-        TakeHomePay.io (“we”, “us”) provides free salary and tax calculators. This policy explains
+        SalaryCalc (“we”, “us”) provides free salary and tax calculators. This policy explains
         what data we collect and how we use it. We aim to collect as little as possible.
       </P>
 
@@ -120,8 +120,8 @@ export default function PrivacyPage() {
       <H2>Contact</H2>
       <P>
         Questions about this policy? Email{' '}
-        <a href="mailto:hello@takehomepay.io" className="underline" style={{ color: 'var(--sky)' }}>
-          hello@takehomepay.io
+        <a href="mailto:hello@salarycalcnet.com" className="underline" style={{ color: 'var(--sky)' }}>
+          hello@salarycalcnet.com
         </a>
         .
       </P>
