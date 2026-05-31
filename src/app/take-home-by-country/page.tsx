@@ -106,6 +106,8 @@ export default function TakeHomeByCountryPage() {
             { label: 'US vs Canada', href: '/guides/us-vs-canada-salary' },
             { label: 'UK vs Australia', href: '/guides/uk-vs-australia-salary' },
             { label: 'Australia vs Canada', href: '/guides/australia-vs-canada-salary' },
+            { label: 'US vs Australia', href: '/guides/us-vs-australia-salary' },
+            { label: 'UK vs Canada', href: '/guides/uk-vs-canada-salary' },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="inline-flex items-center rounded-xl px-4 py-2.5 text-sm font-medium"
               style={{ backgroundColor: '#fff', border: '0.5px solid var(--slate-300)', color: 'var(--navy)' }}>

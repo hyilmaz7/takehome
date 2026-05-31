@@ -231,6 +231,46 @@ export const GUIDES: Guide[] = [
     date: '2026-05-31',
     readMins: 5,
   },
+  {
+    slug: 'us-vs-australia-salary',
+    title: 'US vs Australia Salary: Who Takes Home More?',
+    description:
+      'The US and Australia have nearly identical take-home percentages — but Australia adds 12% super and universal healthcare, while US state tax and insurance change the maths.',
+    excerpt:
+      'Almost the same take-home %, but Australia stacks super and Medicare on top while US workers buy their own health cover.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'uk-vs-canada-salary',
+    title: 'UK vs Canada Salary: Who Takes Home More?',
+    description:
+      'Canadians keep more of the same nominal salary than Brits and avoid the £100k allowance taper — though both fund healthcare through tax. A clear comparison.',
+    excerpt:
+      'Canada keeps more of a 100k salary than the UK (~74% vs ~69%) and skips the brutal £100k tax trap.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'moving-to-australia-from-the-uk',
+    title: 'Moving to Australia from the UK: What Happens to Your Pay',
+    description:
+      'Relocating from the UK to Australia? Here’s how your take-home pay, tax system, pension and healthcare change — and what to sort out before you go.',
+    excerpt:
+      'Swapping the £12,570 personal allowance for an $18,200 tax-free threshold, NI for the Medicare Levy, and a pension for 12% super. Here’s the full picture.',
+    date: '2026-05-31',
+    readMins: 7,
+  },
+  {
+    slug: 'moving-to-canada-from-the-uk',
+    title: 'Moving to Canada from the UK: What Happens to Your Pay',
+    description:
+      'Relocating from the UK to Canada? How your take-home pay, tax, pension and healthcare change when you swap PAYE for federal + provincial tax, CPP and EI.',
+    excerpt:
+      'From National Insurance to CPP and EI, and from one income tax to two layers — here’s what changes about your pay when you move to Canada.',
+    date: '2026-05-31',
+    readMins: 7,
+  },
 ]
 
 export function getGuide(slug: string): Guide | undefined {
