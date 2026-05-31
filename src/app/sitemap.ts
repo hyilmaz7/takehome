@@ -54,6 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const n of REVERSE_ANNUAL) push(`/reverse/${reverseSlug(n, 'year')}`, 0.5)
 
   // Programmatic salary landing pages (the SEO long tail)
+  push('/salary', 0.6)
   for (const amount of US_SALARY_AMOUNTS) {
     push(`/salary/${amount}`, 0.6)
     for (const code of TOP_US_STATES) {

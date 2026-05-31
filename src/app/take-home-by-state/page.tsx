@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { calculate } from '../../lib/tax'
 import { US_STATES } from '../../lib/constants'
+import { stateCodeToSlug } from '../../lib/salaryPage'
 import { formatCurrency, formatPercent } from '../../lib/formatters'
 import JsonLd from '../../components/sections/JsonLd'
 
@@ -97,7 +98,7 @@ export default function TakeHomeByStatePage() {
                   <td className="px-4 py-2.5 tabular-nums" style={{ color: 'var(--slate-400)' }}>{i + 1}</td>
                   <td className="px-4 py-2.5">
                     <Link
-                      href={`/?gross=${SALARY}&country=us&state=${r.code}`}
+                      href={`/us/${stateCodeToSlug(r.code)}`}
                       className="font-medium hover:underline"
                       style={{ color: 'var(--navy)' }}
                     >

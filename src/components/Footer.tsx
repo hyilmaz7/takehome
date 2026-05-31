@@ -121,6 +121,7 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-2.5">
               {[
+                { label: 'All salary pages', href: '/salary' },
                 { label: 'Guides', href: '/guides' },
                 { label: 'Salary by profession', href: '/professions' },
                 { label: 'Take-home by state', href: '/take-home-by-state' },

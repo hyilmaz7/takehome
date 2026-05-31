@@ -3,8 +3,11 @@ import HourlyCalculator from '../../components/calculators/HourlyCalculator'
 import AdBanner from '../../components/AdBanner'
 import Hero from '../../components/sections/Hero'
 import MoreCalculators from '../../components/sections/MoreCalculators'
+import PopularExamples from '../../components/sections/PopularExamples'
 import JsonLd from '../../components/sections/JsonLd'
 import { webApplicationJsonLd } from '../../lib/seo'
+import { HOURLY_RATES } from '../../lib/salaryPage'
+import { formatCurrency } from '../../lib/formatters'
 
 export const metadata: Metadata = {
   title: 'Hourly Wage Calculator — Annual & Monthly Take-Home Pay',
@@ -30,6 +33,15 @@ export default function HourlyPage() {
       <div className="hidden md:flex justify-center my-8 px-4">
         <AdBanner slot="hourly-leaderboard" format="leaderboard" />
       </div>
+
+      <PopularExamples
+        title="Popular hourly rates"
+        intro="See the annual and monthly take-home pay for a specific hourly wage."
+        examples={HOURLY_RATES.map((r) => ({
+          label: `${formatCurrency(r, 'us')}/hour`,
+          href: `/hourly/${r}`,
+        }))}
+      />
 
       <MoreCalculators />
 
