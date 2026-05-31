@@ -62,7 +62,7 @@ export const viewport: Viewport = {
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID
 // Public AdSense publisher ID (not a secret — appears in page source).
-const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID ?? 'ca-pub-1577324382776822'
+const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID ?? 'ca-pub-4036224191759286'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
