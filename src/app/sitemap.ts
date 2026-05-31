@@ -4,6 +4,7 @@ import {
   TOP_US_STATES,
   UK_SALARY_AMOUNTS,
   AU_SALARY_AMOUNTS,
+  CA_SALARY_AMOUNTS,
   HOURLY_RATES,
   STATE_CALCULATOR_PAGES,
   stateCodeToSlug,
@@ -51,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
   for (const amount of UK_SALARY_AMOUNTS) push(`/salary/${amount}-uk`, 0.6)
   for (const amount of AU_SALARY_AMOUNTS) push(`/salary/${amount}-au`, 0.6)
+  for (const amount of CA_SALARY_AMOUNTS) push(`/salary/${amount}-ca`, 0.6)
 
   // Programmatic hourly-rate landing pages
   for (const rate of HOURLY_RATES) push(`/hourly/${rate}`, 0.5)

@@ -17,6 +17,7 @@ import {
   TOP_US_STATES,
   UK_SALARY_AMOUNTS,
   AU_SALARY_AMOUNTS,
+  CA_SALARY_AMOUNTS,
   type ParsedSalary,
 } from '../../../lib/salaryPage'
 import { webApplicationJsonLd, faqPageJsonLd } from '../../../lib/seo'
@@ -44,6 +45,7 @@ export function generateStaticParams(): { amount: string }[] {
   }
   for (const amount of UK_SALARY_AMOUNTS) params.push({ amount: `${amount}-uk` })
   for (const amount of AU_SALARY_AMOUNTS) params.push({ amount: `${amount}-au` })
+  for (const amount of CA_SALARY_AMOUNTS) params.push({ amount: `${amount}-ca` })
 
   return params
 }
@@ -149,7 +151,9 @@ function SimilarSalaries({ parsed }: { parsed: ParsedSalary }) {
       ? UK_SALARY_AMOUNTS
       : parsed.country === 'au'
         ? AU_SALARY_AMOUNTS
-        : US_SALARY_AMOUNTS
+        : parsed.country === 'ca'
+          ? CA_SALARY_AMOUNTS
+          : US_SALARY_AMOUNTS
 
   const suffix =
     parsed.country === 'us'

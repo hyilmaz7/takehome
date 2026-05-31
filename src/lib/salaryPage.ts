@@ -14,13 +14,17 @@ export const US_SALARY_AMOUNTS = [
 // Top US states by search demand (codes match US_STATE_RATES).
 export const TOP_US_STATES = ['CA', 'TX', 'NY', 'FL', 'WA', 'IL', 'PA', 'GA', 'NC', 'MA', 'CO', 'OH']
 
-// States that get a dedicated "{State} Salary Calculator" landing page.
-// All must be in TOP_US_STATES so their /salary/{amount}-{state} pages exist.
-export const STATE_CALCULATOR_PAGES = ['CA', 'TX', 'NY', 'FL', 'WA', 'IL', 'GA', 'CO', 'OH', 'NC']
+// Every US state (+ DC) gets a dedicated "{State} Salary Calculator" landing page.
+// Pages for states outside TOP_US_STATES link salary examples to the calculator
+// prefill instead of a /salary/{amount}-{state} page (which only exists for the
+// top states), so there are no broken links.
+export const STATE_CALCULATOR_PAGES = US_STATES.map((s) => s.code)
 
 export const UK_SALARY_AMOUNTS = [25000, 30000, 35000, 40000, 45000, 50000, 60000, 70000, 80000, 100000]
 
 export const AU_SALARY_AMOUNTS = [60000, 70000, 80000, 90000, 100000, 120000, 150000]
+
+export const CA_SALARY_AMOUNTS = [45000, 50000, 55000, 60000, 70000, 80000, 90000, 100000, 120000, 150000]
 
 export const HOURLY_RATES = [15, 18, 20, 22, 25, 28, 30, 35, 40, 45, 50, 60, 75, 100, 125, 150, 200]
 

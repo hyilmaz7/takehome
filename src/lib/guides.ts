@@ -271,6 +271,136 @@ export const GUIDES: Guide[] = [
     date: '2026-05-31',
     readMins: 7,
   },
+  {
+    slug: 'federal-withholding-explained',
+    title: 'What Is Federal Income Tax Withholding?',
+    description:
+      'Federal withholding is the income tax your employer takes out of each paycheck and sends to the IRS on your behalf. Here’s how it’s calculated and how to adjust it.',
+    excerpt:
+      'The biggest deduction on most US paychecks isn’t your final tax bill — it’s an estimate. Here’s how federal withholding works and how to fix it.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'standard-deduction-explained',
+    title: 'The Standard Deduction Explained (2025)',
+    description:
+      'The standard deduction is the slice of income the IRS doesn’t tax — $15,000 for single filers in 2025. Here’s how it works and when to itemise instead.',
+    excerpt:
+      'Before any tax bracket touches your income, the standard deduction takes $15,000 (single) off the top. Here’s what that means for your take-home.',
+    date: '2026-05-31',
+    readMins: 4,
+  },
+  {
+    slug: 'tax-brackets-explained',
+    title: 'How US Tax Brackets Actually Work',
+    description:
+      'Moving into a higher tax bracket doesn’t tax all your income at that rate — only the portion inside it. Here’s how the 2025 brackets really work.',
+    excerpt:
+      'The most misunderstood idea in personal finance: a raise can’t leave you worse off. Here’s how progressive tax brackets actually work.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'w4-explained',
+    title: 'How to Fill Out a W-4 (and How It Affects Your Pay)',
+    description:
+      'Your W-4 tells your employer how much federal tax to withhold. Get it wrong and you’ll over- or under-pay all year. Here’s how to fill it out.',
+    excerpt:
+      'The W-4 is the form that decides how much tax comes out of every paycheck. Here’s how to set it so you don’t owe — or over-lend the IRS — at tax time.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'married-vs-single-tax',
+    title: 'Married vs Single: How Filing Status Changes Your Take-Home',
+    description:
+      'Getting married usually lowers your combined tax bill thanks to wider brackets — but two high earners can hit a “marriage penalty.” Here’s how it works.',
+    excerpt:
+      'Filing status changes your brackets and standard deduction. For most couples that’s a bonus; for two big earners it can be a penalty. Here’s the maths.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'w2-vs-1099-take-home',
+    title: 'W-2 vs 1099: How Your Take-Home Pay Differs',
+    description:
+      'A 1099 contractor pays both halves of FICA (15.3% self-employment tax) and gets no employer benefits — so the same headline rate means very different take-home.',
+    excerpt:
+      'A $100k W-2 job and a $100k 1099 contract are not the same money. Here’s why the contractor keeps less — and what to charge to make up for it.',
+    date: '2026-05-31',
+    readMins: 6,
+  },
+  {
+    slug: 'ny-vs-ca-vs-tx-salary',
+    title: 'New York vs California vs Texas: Take-Home Pay Compared',
+    description:
+      'The three biggest US job markets, three very different tax bills. On a $100,000 salary, Texas keeps thousands more than California or New York.',
+    excerpt:
+      'Same $100k salary, three of America’s biggest job hubs. Texas wins on tax — but the cities’ costs tell the rest of the story.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'moving-to-the-us-from-the-uk',
+    title: 'Moving to the US from the UK: What Happens to Your Pay',
+    description:
+      'Relocating from the UK to the US? You’ll usually take home more — but you swap the NHS for paid health insurance, and your state choice matters a lot.',
+    excerpt:
+      'Higher take-home, but you buy your own healthcare and your state can swing your pay by thousands. Here’s what changes moving UK → US.',
+    date: '2026-05-31',
+    readMins: 7,
+  },
+  {
+    slug: 'moving-to-the-uk-from-the-us',
+    title: 'Moving to the UK from the US: What Happens to Your Pay',
+    description:
+      'Relocating from the US to the UK? You’ll likely take home a smaller share — but income tax and National Insurance fund the NHS. Here’s what changes.',
+    excerpt:
+      'Lower take-home percentage, but no health-insurance bill and no state tax to dodge. Here’s how your pay changes moving US → UK.',
+    date: '2026-05-31',
+    readMins: 7,
+  },
+  {
+    slug: 'moving-to-canada-from-the-us',
+    title: 'Moving to Canada from the US: What Happens to Your Pay',
+    description:
+      'Relocating from the US to Canada? You’ll trade a bit more tax for universal healthcare — and swap FICA for CPP and EI. Here’s the full picture.',
+    excerpt:
+      'A little more tax, no health-insurance premiums, and two layers of income tax instead of state-by-state. Here’s what changes moving US → Canada.',
+    date: '2026-05-31',
+    readMins: 7,
+  },
+  {
+    slug: 'first-job-take-home-pay',
+    title: 'Your First Job: Understanding Your Take-Home Pay',
+    description:
+      'Starting your first job? Here’s why your paycheck is smaller than your salary ÷ 12 — federal tax, FICA, state tax and benefits, explained simply.',
+    excerpt:
+      'Your salary isn’t what lands in your account. Here’s a plain-English guide to every deduction on your first paycheck — and how to plan around it.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'how-to-evaluate-a-job-offer',
+    title: 'How to Evaluate a Job Offer (Beyond the Salary)',
+    description:
+      'The headline salary is only part of an offer. Compare take-home pay, 401(k) match, benefits, state tax and total comp before you decide.',
+    excerpt:
+      'Two offers with the same salary can be worth thousands apart. Here’s a framework for comparing job offers on what actually matters: after-tax total comp.',
+    date: '2026-05-31',
+    readMins: 6,
+  },
+  {
+    slug: 'side-hustle-taxes',
+    title: 'Side Hustle Taxes: What You’ll Actually Keep',
+    description:
+      'Side-hustle income is taxed at your marginal rate plus 15.3% self-employment tax. Here’s how to estimate what you keep — and set money aside.',
+    excerpt:
+      'That extra $10k from your side gig won’t all be yours. Here’s how side-hustle income is taxed and how much to set aside so April isn’t a shock.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
 ]
 
 export function getGuide(slug: string): Guide | undefined {

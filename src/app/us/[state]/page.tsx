@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import { calculate } from '../../../lib/tax'
 import { formatCurrency, formatPercent } from '../../../lib/formatters'
 import { US_STATES, NO_TAX_STATES } from '../../../lib/constants'
-import { STATE_CALCULATOR_PAGES, stateNameToSlug, stateCodeToSlug } from '../../../lib/salaryPage'
+import { STATE_CALCULATOR_PAGES, TOP_US_STATES, stateNameToSlug, stateCodeToSlug } from '../../../lib/salaryPage'
 import { faqPageJsonLd, webApplicationJsonLd } from '../../../lib/seo'
 import { US_FAQ } from '../../../lib/faq'
 import SalaryCalculator from '../../../components/calculators/SalaryCalculator'
@@ -51,9 +51,14 @@ export default async function StateCalculatorPage({ params }: Props) {
   const breakdown = calculate({ country: 'us', grossAnnual: REF_SALARY, filingStatus: 'single', state: s.code })
   const netMonthly = formatCurrency(Math.round(breakdown.netAnnual / 12), 'us')
 
+  // Dedicated /salary/{amount}-{state} pages exist only for the top states;
+  // other states link to the calculator prefill so nothing 404s.
+  const hasSalaryPages = TOP_US_STATES.includes(s.code)
   const examples = [50000, 75000, 100000, 150000, 200000].map((amt) => ({
     label: `$${amt / 1000}K after tax`,
-    href: `/salary/${amt}-${stateCodeToSlug(s.code)}`,
+    href: hasSalaryPages
+      ? `/salary/${amt}-${stateCodeToSlug(s.code)}`
+      : `/?gross=${amt}&country=us&state=${s.code}`,
   }))
 
   const faqLd = faqPageJsonLd(US_FAQ)
