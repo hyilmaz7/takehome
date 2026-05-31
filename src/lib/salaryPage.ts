@@ -11,8 +11,12 @@ export const US_SALARY_AMOUNTS = [
   175000, 200000, 250000, 300000,
 ]
 
-// Top 10 US states by search demand (codes match US_STATE_RATES).
-export const TOP_US_STATES = ['CA', 'TX', 'NY', 'FL', 'WA', 'IL', 'PA', 'GA', 'NC', 'MA']
+// Top US states by search demand (codes match US_STATE_RATES).
+export const TOP_US_STATES = ['CA', 'TX', 'NY', 'FL', 'WA', 'IL', 'PA', 'GA', 'NC', 'MA', 'CO', 'OH']
+
+// States that get a dedicated "{State} Salary Calculator" landing page.
+// All must be in TOP_US_STATES so their /salary/{amount}-{state} pages exist.
+export const STATE_CALCULATOR_PAGES = ['CA', 'TX', 'NY', 'FL', 'WA', 'IL', 'GA', 'CO', 'OH', 'NC']
 
 export const UK_SALARY_AMOUNTS = [25000, 30000, 35000, 40000, 45000, 50000, 60000, 70000, 80000, 100000]
 

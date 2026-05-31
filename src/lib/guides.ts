@@ -51,6 +51,46 @@ export const GUIDES: Guide[] = [
     date: '2026-05-31',
     readMins: 6,
   },
+  {
+    slug: 'fica-tax-explained',
+    title: 'FICA Tax Explained: Social Security & Medicare (2025)',
+    description:
+      'FICA is the 7.65% payroll tax on your paycheck — 6.2% Social Security plus 1.45% Medicare. Here’s how it works, the wage base, and the extra Medicare surtax.',
+    excerpt:
+      'That “FICA” line on your paystub is 7.65% of your pay. Here’s exactly what it funds, where it caps, and why your 401(k) doesn’t reduce it.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'how-much-tax-on-paycheck',
+    title: 'How Much Tax Comes Out of My Paycheck?',
+    description:
+      'Federal tax, state tax, Social Security and Medicare all come out before you’re paid. Here’s how much to expect — and what changes it.',
+    excerpt:
+      'Most US workers lose 20–35% of gross pay to taxes before it hits their account. Here’s the breakdown and how to estimate yours.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'bonus-tax-rate',
+    title: 'How Is a Bonus Taxed? The Real Bonus Tax Rate',
+    description:
+      'Bonuses are withheld at a flat 22% federal rate (37% above $1M) plus FICA and state tax — but that’s withholding, not your final tax. Here’s the difference.',
+    excerpt:
+      'Your bonus looked like it got taxed at 40%+. It didn’t — that’s just withholding. Here’s how bonus tax actually works.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'how-to-read-your-pay-stub',
+    title: 'How to Read Your Pay Stub',
+    description:
+      'Gross pay, FICA, federal and state withholding, pre-tax deductions and net pay — a line-by-line guide to understanding your paycheck.',
+    excerpt:
+      'Confused by your paystub? Here’s what every line means — gross, FICA, withholding, pre-tax deductions and the net pay you actually keep.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
 ]
 
 export function getGuide(slug: string): Guide | undefined {

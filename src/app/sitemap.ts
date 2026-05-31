@@ -5,6 +5,7 @@ import {
   UK_SALARY_AMOUNTS,
   AU_SALARY_AMOUNTS,
   HOURLY_RATES,
+  STATE_CALCULATOR_PAGES,
   stateCodeToSlug,
 } from '../lib/salaryPage'
 import { GUIDES } from '../lib/guides'
@@ -21,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Core pages
   push('/', 1.0)
   push('/us', 0.9)
+  for (const code of STATE_CALCULATOR_PAGES) push(`/us/${stateCodeToSlug(code)}`, 0.8)
   push('/uk', 0.9)
   push('/au', 0.8)
   push('/ca', 0.8)
