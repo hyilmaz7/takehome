@@ -61,7 +61,8 @@ export const viewport: Viewport = {
 }
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID
-const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID
+// Public AdSense publisher ID (not a secret — appears in page source).
+const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID ?? 'ca-pub-1577324382776822'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -84,14 +85,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             });
           `}
         </Script>
-        {adsenseId && (
-          <Script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
-          />
-        )}
+        {/* Google AdSense — plain tag in the server-rendered <head> so the
+            AdSense verification crawler finds it on every page. */}
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <Header />
