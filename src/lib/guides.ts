@@ -91,6 +91,86 @@ export const GUIDES: Guide[] = [
     date: '2026-05-31',
     readMins: 5,
   },
+  {
+    slug: 'social-security-tax-explained',
+    title: 'Social Security Tax Explained (2025)',
+    description:
+      'Social Security tax is 6.2% of your wages up to $176,100 in 2025. Here’s how it works, what it funds, the wage base cap, and what self-employed people pay.',
+    excerpt:
+      'The 6.2% Social Security line on your paystub stops at $176,100 of earnings. Here’s what it funds and why it caps out.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'medicare-tax-explained',
+    title: 'Medicare Tax Explained (2025)',
+    description:
+      'Medicare tax is 1.45% of all your wages with no cap, plus an extra 0.9% surtax for high earners. Here’s how the Medicare payroll tax actually works.',
+    excerpt:
+      'Medicare is 1.45% on every dollar you earn — with an extra 0.9% once you pass $200,000. Here’s the full picture.',
+    date: '2026-05-31',
+    readMins: 4,
+  },
+  {
+    slug: 'self-employed-tax-guide',
+    title: 'Self-Employed Taxes Explained (2025)',
+    description:
+      'Self-employment tax is 15.3% on top of income tax, because you pay both halves of Social Security and Medicare. Here’s how it works and how to lower it.',
+    excerpt:
+      'Working for yourself means paying both halves of FICA — a 15.3% self-employment tax. Here’s how it works, plus the deductions that soften it.',
+    date: '2026-05-31',
+    readMins: 6,
+  },
+  {
+    slug: 'negotiate-salary-after-tax',
+    title: 'How to Negotiate Salary (Think in After-Tax Terms)',
+    description:
+      'A $10,000 raise isn’t $10,000 in your pocket. Negotiate using take-home pay, total comp and marginal rates — not just the headline number.',
+    excerpt:
+      'The headline salary number is the wrong thing to anchor on. Here’s how to negotiate in after-tax, total-comp terms.',
+    date: '2026-05-31',
+    readMins: 6,
+  },
+  {
+    slug: 'remote-work-taxes',
+    title: 'Remote Work Taxes: Which State Do I Pay In?',
+    description:
+      'Remote workers generally pay state income tax where they live and work — but “convenience of employer” rules and reciprocity agreements complicate it.',
+    excerpt:
+      'Work remotely across state lines? Where you owe state income tax usually depends on where you sit — but there are big exceptions.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'uk-national-insurance-explained',
+    title: 'UK National Insurance Explained (2025/26)',
+    description:
+      'National Insurance is a separate UK payroll contribution: 8% on earnings between £12,570 and £50,270, then 2% above. Here’s what it funds and how it works.',
+    excerpt:
+      'NI isn’t income tax — it’s a separate 8%/2% contribution that funds your State Pension. Here’s how it’s calculated.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'california-vs-texas-salary',
+    title: 'California vs Texas: Who Takes Home More?',
+    description:
+      'Texas has no state income tax; California’s tops out at 13.3%. On the same salary, a Texan keeps thousands more — but cost of living tells the rest of the story.',
+    excerpt:
+      'Same $100k salary, very different take-home. We compare California and Texas paycheck-to-paycheck — and the catch.',
+    date: '2026-05-31',
+    readMins: 5,
+  },
+  {
+    slug: 'what-salary-for-5000-month',
+    title: 'What Salary Do I Need to Take Home $5,000 a Month?',
+    description:
+      'To net $5,000 a month ($60,000 a year) you need a gross salary of roughly $74,000 in a no-tax state — more in California. Here’s how to work it out.',
+    excerpt:
+      'Targeting $5,000/month in your account? Here’s the gross salary you actually need — and why your state changes the answer.',
+    date: '2026-05-31',
+    readMins: 4,
+  },
 ]
 
 export function getGuide(slug: string): Guide | undefined {
