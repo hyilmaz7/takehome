@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import type { Country } from '../../types'
 import SalaryCalculator from '../../components/calculators/SalaryCalculator'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.salarycalcnet.com'
 
 export const metadata: Metadata = {
   title: 'Salary Calculator Widget',

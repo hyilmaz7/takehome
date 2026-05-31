@@ -10,7 +10,7 @@ import {
 } from '../lib/salaryPage'
 import { GUIDES } from '../lib/guides'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.salarycalcnet.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date()

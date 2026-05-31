@@ -36,7 +36,7 @@ npm run lint         # ESLint only
 Create a `.env.local` (see [IDs](#adsense--google-analytics-ids)):
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://salarycalcnet.com
+NEXT_PUBLIC_SITE_URL=https://www.salarycalcnet.com
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 NEXT_PUBLIC_ADSENSE_ID=ca-pub-XXXXXXXXXX
 ```

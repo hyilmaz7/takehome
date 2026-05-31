@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   description:
     'Calculate your exact take-home pay after tax. Free salary calculator for US, UK, Australia and Canada. Real-time results, no signup required.',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.salarycalcnet.com'),
   openGraph: {
     siteName: 'SalaryCalc',
     type: 'website',
