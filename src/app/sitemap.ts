@@ -11,6 +11,7 @@ import {
 } from '../lib/salaryPage'
 import { GUIDES } from '../lib/guides'
 import { PROFESSIONS } from '../lib/professions'
+import { REVERSE_MONTHLY, REVERSE_ANNUAL, reverseSlug } from '../lib/reverse'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
 
@@ -47,6 +48,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Salary-by-profession pages
   push('/professions', 0.6)
   for (const p of PROFESSIONS) push(`/professions/${p.slug}`, 0.5)
+
+  // Reverse-salary target pages
+  for (const n of REVERSE_MONTHLY) push(`/reverse/${reverseSlug(n, 'month')}`, 0.5)
+  for (const n of REVERSE_ANNUAL) push(`/reverse/${reverseSlug(n, 'year')}`, 0.5)
 
   // Programmatic salary landing pages (the SEO long tail)
   for (const amount of US_SALARY_AMOUNTS) {

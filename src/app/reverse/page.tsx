@@ -3,8 +3,11 @@ import ReverseCalculator from '../../components/calculators/ReverseCalculator'
 import AdBanner from '../../components/AdBanner'
 import Hero from '../../components/sections/Hero'
 import MoreCalculators from '../../components/sections/MoreCalculators'
+import PopularExamples from '../../components/sections/PopularExamples'
 import JsonLd from '../../components/sections/JsonLd'
 import { webApplicationJsonLd } from '../../lib/seo'
+import { REVERSE_MONTHLY, reverseSlug } from '../../lib/reverse'
+import { formatCurrency } from '../../lib/formatters'
 
 export const metadata: Metadata = {
   title: 'Reverse Salary Calculator — What Gross Salary Do I Need?',
@@ -30,6 +33,15 @@ export default function ReversePage() {
       <div className="hidden md:flex justify-center my-8 px-4">
         <AdBanner slot="reverse-leaderboard" format="leaderboard" />
       </div>
+
+      <PopularExamples
+        title="Popular take-home targets"
+        intro="See the gross salary you need for a specific monthly take-home goal."
+        examples={REVERSE_MONTHLY.map((n) => ({
+          label: `Take home ${formatCurrency(n, 'us')}/mo`,
+          href: `/reverse/${reverseSlug(n, 'month')}`,
+        }))}
+      />
 
       <MoreCalculators />
 
