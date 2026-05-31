@@ -171,6 +171,36 @@ export const GUIDES: Guide[] = [
     date: '2026-05-31',
     readMins: 4,
   },
+  {
+    slug: 'australia-income-tax-guide',
+    title: 'Australia Income Tax Explained (2025/26)',
+    description:
+      'How Australian take-home pay works for 2025/26 — the $18,200 tax-free threshold, the 16/30/37/45% brackets, the Medicare Levy, surcharge and superannuation.',
+    excerpt:
+      'From the $18,200 tax-free threshold to the Medicare Levy and 12% super — a plain-English guide to Australian income tax.',
+    date: '2026-05-31',
+    readMins: 6,
+  },
+  {
+    slug: 'canada-income-tax-guide',
+    title: 'Canada Income Tax Explained (2025)',
+    description:
+      'How Canadian take-home pay works — federal and provincial tax, CPP and EI, and the basic personal amount. A plain-English guide for 2025.',
+    excerpt:
+      'Two layers of tax plus CPP and EI — here’s how Canadian income tax actually works, and why your province matters.',
+    date: '2026-05-31',
+    readMins: 6,
+  },
+  {
+    slug: 'uk-vs-us-salary-comparison',
+    title: 'UK vs US Salary: Who Takes Home More?',
+    description:
+      'US workers keep a higher percentage of gross pay than UK workers — but healthcare, currency and state tax make a direct comparison tricky. Here’s the real picture.',
+    excerpt:
+      'On paper, US take-home percentages beat the UK’s. But once you add healthcare and cost of living, the comparison gets interesting.',
+    date: '2026-05-31',
+    readMins: 6,
+  },
 ]
 
 export function getGuide(slug: string): Guide | undefined {
