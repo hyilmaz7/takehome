@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { Country } from '../types'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
+const FALLBACK_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
 
 const COUNTRIES: { value: Country; label: string }[] = [
   { value: 'us', label: '🇺🇸 United States' },
@@ -16,6 +16,15 @@ export default function EmbedCodeGenerator() {
   const [country, setCountry] = useState<Country>('us')
   const [lock, setLock] = useState(false)
   const [copied, setCopied] = useState(false)
+  // Prefer the configured site URL; otherwise use the current origin so the
+  // preview works on whatever domain this page is served from.
+  const [siteUrl, setSiteUrl] = useState(FALLBACK_URL)
+  useEffect(() => {
+    if (!process.env.NEXT_PUBLIC_SITE_URL && typeof window !== 'undefined') {
+      setSiteUrl(window.location.origin)
+    }
+  }, [])
+  const SITE_URL = siteUrl
 
   const src = `${SITE_URL}/embed?country=${country}${lock ? '&lock=1' : ''}`
   const code = `<iframe src="${src}" title="Salary Calculator by SalaryCalc" width="100%" height="880" style="border:0;max-width:760px;" loading="lazy"></iframe>
