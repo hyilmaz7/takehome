@@ -18,7 +18,7 @@ export default function CountryTabs({ active, onChange }: CountryTabsProps) {
   return (
     // Container's bottom border acts as the baseline; active tab's border overrides it
     <div
-      className="flex no-scrollbar overflow-x-auto"
+      className="@container flex no-scrollbar"
       style={{ borderBottom: '1px solid var(--slate-300)' }}
       role="tablist"
       aria-label="Select country"
@@ -32,7 +32,7 @@ export default function CountryTabs({ active, onChange }: CountryTabsProps) {
             aria-selected={isActive}
             aria-controls={`tab-panel-${country}`}
             onClick={() => onChange(country)}
-            className="flex items-center gap-2 px-4 py-3 text-sm font-medium whitespace-nowrap transition-colors relative flex-shrink-0"
+            className="flex-1 min-w-0 flex items-center justify-center gap-1.5 px-2 py-3 text-sm font-medium transition-colors relative"
             style={{
               backgroundColor: isActive ? '#ffffff' : 'var(--slate-100)',
               color: isActive ? 'var(--sky)' : 'var(--slate-500)',
@@ -46,9 +46,10 @@ export default function CountryTabs({ active, onChange }: CountryTabsProps) {
             <span className="text-[15px] leading-none" aria-hidden="true">
               {flag}
             </span>
-            {/* Full label on md+, short code on mobile */}
-            <span className="hidden sm:inline">{label}</span>
-            <span className="sm:hidden">{shortLabel}</span>
+            {/* Full name when the tab row is wide enough (container query),
+                otherwise the short code — keeps all four tabs fitting the column. */}
+            <span className="hidden @min-[600px]:inline truncate">{label}</span>
+            <span className="@min-[600px]:hidden">{shortLabel}</span>
           </button>
         )
       })}
