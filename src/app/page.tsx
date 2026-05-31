@@ -11,7 +11,7 @@ import { faqPageJsonLd, webApplicationJsonLd } from '../lib/seo'
 import { US_FAQ } from '../lib/faq'
 
 export const metadata: Metadata = {
-  title: 'US Salary Calculator 2025 — Take-Home Pay After Tax',
+  title: 'US Salary Calculator 2025 — Take-Home Pay After Tax | SalaryCalc',
   description:
     'Calculate your exact US take-home pay after federal tax, state tax and FICA. Free real-time salary calculator for all 50 states. Updated for 2025 tax rates.',
   alternates: { canonical: '/' },
