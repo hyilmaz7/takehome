@@ -10,6 +10,7 @@ import {
   stateCodeToSlug,
 } from '../lib/salaryPage'
 import { GUIDES } from '../lib/guides'
+import { PROFESSIONS } from '../lib/professions'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
 
@@ -42,6 +43,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   push('/take-home-by-country', 0.6)
   push('/widget', 0.4)
   for (const g of GUIDES) push(`/guides/${g.slug}`, 0.6)
+
+  // Salary-by-profession pages
+  push('/professions', 0.6)
+  for (const p of PROFESSIONS) push(`/professions/${p.slug}`, 0.5)
 
   // Programmatic salary landing pages (the SEO long tail)
   for (const amount of US_SALARY_AMOUNTS) {

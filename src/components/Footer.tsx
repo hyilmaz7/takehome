@@ -122,6 +122,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5">
               {[
                 { label: 'Guides', href: '/guides' },
+                { label: 'Salary by profession', href: '/professions' },
                 { label: 'Take-home by state', href: '/take-home-by-state' },
                 { label: 'Take-home by country', href: '/take-home-by-country' },
                 { label: 'Embed widget', href: '/widget' },
