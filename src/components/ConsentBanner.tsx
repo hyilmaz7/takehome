@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const STORAGE_KEY = 'thp-consent'
 
@@ -18,6 +19,7 @@ function applyConsent(granted: boolean) {
 
 export default function ConsentBanner() {
   const [visible, setVisible] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     try {
@@ -42,6 +44,7 @@ export default function ConsentBanner() {
     setVisible(false)
   }
 
+  if (pathname.startsWith('/embed')) return null
   if (!visible) return null
 
   return (

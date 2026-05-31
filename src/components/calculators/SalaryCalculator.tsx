@@ -678,6 +678,9 @@ interface SalaryCalculatorProps {
   initialGross?: number
   /** Pre-fill the US state or CA province (used by the salary landing pages). */
   initialRegion?: string
+  /** Compact mode for the embeddable widget: hides the long explanation and
+   *  the share/compare buttons (which would navigate the parent iframe). */
+  compact?: boolean
 }
 
 export default function SalaryCalculator({
@@ -685,6 +688,7 @@ export default function SalaryCalculator({
   locked = false,
   initialGross,
   initialRegion,
+  compact = false,
 }: SalaryCalculatorProps) {
   const router = useRouter()
   const mountedRef = useRef(false)
@@ -1030,16 +1034,18 @@ export default function SalaryCalculator({
                   period={viewPeriod}
                   country={inputs.country}
                 />
-                <div
-                  className="mt-5 pt-4"
-                  style={{ borderTop: '1px solid var(--slate-100)' }}
-                >
-                  <ShareButtons
-                    breakdown={breakdown}
-                    period={viewPeriod}
-                    country={inputs.country}
-                  />
-                </div>
+                {!compact && (
+                  <div
+                    className="mt-5 pt-4"
+                    style={{ borderTop: '1px solid var(--slate-100)' }}
+                  >
+                    <ShareButtons
+                      breakdown={breakdown}
+                      period={viewPeriod}
+                      country={inputs.country}
+                    />
+                  </div>
+                )}
               </>
             ) : (
               <div role="alert" className="text-center py-8">
@@ -1055,8 +1061,8 @@ export default function SalaryCalculator({
         </div>
       </div>
 
-      {/* ── Explanation section ───────────────────────────────────── */}
-      {breakdown && <CalculationFlow breakdown={breakdown} inputs={inputs} />}
+      {/* ── Explanation section (hidden in compact/embed mode) ────── */}
+      {!compact && breakdown && <CalculationFlow breakdown={breakdown} inputs={inputs} />}
     </div>
   )
 }

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const CALCULATOR_LINKS = [
   { label: 'Salary Calculator', href: '/' },
@@ -33,6 +34,9 @@ function FooterLogo() {
 }
 
 export default function Footer() {
+  const pathname = usePathname()
+  if (pathname.startsWith('/embed')) return null
+
   return (
     <footer style={{ backgroundColor: 'var(--navy)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -119,6 +123,7 @@ export default function Footer() {
               {[
                 { label: 'Guides', href: '/guides' },
                 { label: 'Take-home by state', href: '/take-home-by-state' },
+                { label: 'Embed widget', href: '/widget' },
                 { label: 'About', href: '/about' },
                 { label: 'Methodology', href: '/methodology' },
                 { label: 'Contact', href: '/contact' },

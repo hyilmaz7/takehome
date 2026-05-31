@@ -82,6 +82,9 @@ export default function Header() {
     }
   }, [mobileOpen])
 
+  // The embeddable widget renders without site chrome.
+  if (pathname.startsWith('/embed')) return null
+
   return (
     <>
       <header

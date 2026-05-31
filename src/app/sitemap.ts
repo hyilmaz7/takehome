@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Content hub
   push('/guides', 0.6)
   push('/take-home-by-state', 0.6)
+  push('/widget', 0.4)
   for (const g of GUIDES) push(`/guides/${g.slug}`, 0.6)
 
   // Programmatic salary landing pages (the SEO long tail)
