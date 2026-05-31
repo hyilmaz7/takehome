@@ -6,7 +6,7 @@ export interface FaqEntry {
   a: string
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.salarycalcnet.com'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
 
 /** schema.org FAQPage built from the same Q&A list rendered on the page. */
 export function faqPageJsonLd(items: FaqEntry[]) {

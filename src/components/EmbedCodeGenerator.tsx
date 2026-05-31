@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import type { Country } from '../types'
 
-const FALLBACK_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.salarycalcnet.com'
+const FALLBACK_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
 
 const COUNTRIES: { value: Country; label: string }[] = [
   { value: 'us', label: '🇺🇸 United States' },

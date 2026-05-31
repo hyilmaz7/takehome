@@ -44,14 +44,14 @@ function buildResultText(breakdown: TaxBreakdown, period: PayPeriod, country: Co
     `  Effective tax rate: ${formatPercent(breakdown.effectiveTaxRate)}`,
     `  Marginal tax rate:  ${formatPercent(breakdown.marginalTaxRate, 0)}`,
     ``,
-    `Calculate yours → ${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.salarycalcnet.com'}`,
+    `Calculate yours → ${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'}`,
   ]
 
   return lines.join('\n')
 }
 
 function buildShareUrl(breakdown: TaxBreakdown, period: PayPeriod, country: Country): string {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.salarycalcnet.com'
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
   const params = new URLSearchParams({
     gross: String(Math.round(breakdown.grossAnnual)),
     period,
