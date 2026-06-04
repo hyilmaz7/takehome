@@ -401,6 +401,56 @@ export const GUIDES: Guide[] = [
     date: '2026-05-31',
     readMins: 5,
   },
+  {
+    slug: 'tax-deductions-on-salary',
+    title: 'Tax Deductions on Your Salary Explained (2025)',
+    description:
+      'Pre-tax deductions like a 401(k), HSA and FSA lower the salary you’re actually taxed on. Here’s which deductions reduce your taxable income — and which don’t.',
+    excerpt:
+      'Some deductions come out before tax and shrink your bill; others don’t touch it. Here’s exactly what reduces the salary the IRS taxes — and what doesn’t.',
+    date: '2026-06-04',
+    readMins: 6,
+  },
+  {
+    slug: 'how-to-calculate-salary-after-tax',
+    title: 'How to Calculate Your Salary After Taxes (Step by Step)',
+    description:
+      'A clear, worked walkthrough: start with gross salary, subtract pre-tax deductions and the standard deduction, apply the 2025 brackets, add FICA and state tax.',
+    excerpt:
+      'Want to work out your take-home pay by hand? Here’s the exact six-step method, with a full $70,000 example you can follow line by line.',
+    date: '2026-06-04',
+    readMins: 6,
+  },
+  {
+    slug: 'gross-vs-net-pay',
+    title: 'Gross Pay vs Net Pay: What’s the Difference?',
+    description:
+      'Gross pay is your salary before deductions; net pay is what lands in your account. Here’s what sits in the gap — and why your paycheck isn’t salary ÷ 12.',
+    excerpt:
+      'Gross is the headline number; net is what you actually keep. Here’s everything that comes out in between — and why the gap is bigger than most people expect.',
+    date: '2026-06-04',
+    readMins: 4,
+  },
+  {
+    slug: 'is-overtime-taxed-more',
+    title: 'Is Overtime Taxed More? How Overtime Pay Works',
+    description:
+      'Overtime is paid at time-and-a-half, but it isn’t taxed at a higher rate. Here’s why a big overtime check looks over-taxed — and what you actually keep.',
+    excerpt:
+      'Your overtime check looked like it got hammered by tax. It wasn’t taxed at a special rate — here’s what really happened, and why it evens out.',
+    date: '2026-06-04',
+    readMins: 5,
+  },
+  {
+    slug: 'salary-to-hourly',
+    title: 'How to Convert Salary to Hourly Pay (and Back)',
+    description:
+      'Divide your annual salary by your yearly hours (2,080 for full-time) to get your hourly rate — and multiply back to go the other way. Here’s the math with examples.',
+    excerpt:
+      'A $60,000 salary is about $28.85 an hour — here’s the simple formula to convert salary to hourly and back, plus what changes once tax is involved.',
+    date: '2026-06-04',
+    readMins: 4,
+  },
 ]
 
 export function getGuide(slug: string): Guide | undefined {

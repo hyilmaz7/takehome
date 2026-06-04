@@ -20,6 +20,24 @@ export function formatCurrency(amount: number, country: Country): string {
   }
 }
 
+const CURRENCY_SYMBOLS: Record<Country, string> = {
+  us: '$',
+  uk: '£',
+  au: 'A$',
+  ca: 'CA$',
+}
+
+/**
+ * Format an hourly rate, preserving cents when present: 19.5 → "$19.50", 20 → "$20".
+ * Unlike formatCurrency (which rounds to whole units), this keeps the half-dollar
+ * rates people actually search for ("$19.50 an hour").
+ */
+export function formatHourlyRate(rate: number, country: Country = 'us'): string {
+  const symbol = CURRENCY_SYMBOLS[country]
+  const decimals = Number.isInteger(rate) ? 0 : 2
+  return `${symbol}${rate.toFixed(decimals)}`
+}
+
 export function formatPeriod(annual: number, period: PayPeriod): number {
   return annual / PERIOD_DIVISORS[period]
 }

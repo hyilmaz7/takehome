@@ -26,7 +26,19 @@ export const AU_SALARY_AMOUNTS = [60000, 70000, 80000, 90000, 100000, 120000, 15
 
 export const CA_SALARY_AMOUNTS = [45000, 50000, 55000, 60000, 70000, 80000, 90000, 100000, 120000, 150000]
 
-export const HOURLY_RATES = [15, 18, 20, 22, 25, 28, 30, 35, 40, 45, 50, 60, 75, 100, 125, 150, 200]
+// Every rate here gets its own /hourly/{rate} landing page (and a sitemap entry).
+// We cover whole dollars densely from $10–$40 (where most hourly searches sit)
+// plus the half-dollar rates people actually type ("$19.50 an hour after taxes"),
+// thinning out for higher rates. Decimal slugs render as cents via formatHourlyRate.
+export const HOURLY_RATES = [
+  10, 11, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5,
+  19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 23, 23.5, 24, 24.5, 25, 25.5, 26, 27,
+  28, 29, 30, 31, 32, 33, 34, 35, 36, 38, 40, 42, 45, 48, 50, 55, 60, 65, 70,
+  75, 80, 85, 90, 100, 110, 120, 125, 150, 175, 200,
+]
+
+// A curated subset for index/"popular rates" chips, so we don't dump 60+ links.
+export const POPULAR_HOURLY_RATES = [15, 18, 20, 22, 25, 30, 35, 40, 50, 60, 75, 100]
 
 const COUNTRY_CODES: Country[] = ['us', 'uk', 'au', 'ca']
 

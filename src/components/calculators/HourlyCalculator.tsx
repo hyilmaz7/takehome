@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import type { TaxInput, PayPeriod, Country, FilingStatus } from '../../types'
 import { calculate } from '../../lib/tax'
-import { formatCurrency, formatPercent } from '../../lib/formatters'
+import { formatCurrency, formatHourlyRate, formatPercent } from '../../lib/formatters'
 import { US_STATES, NO_TAX_STATES, CA_PROVINCES, DEFAULT_INPUTS } from '../../lib/constants'
 import CountryTabs from '../ui/CountryTabs'
 import SliderField from '../ui/SliderField'
@@ -252,7 +252,7 @@ export default function HourlyCalculator({ initialRate }: HourlyCalculatorProps 
                   className="text-5xl font-semibold tabular-nums"
                   style={{ color: 'var(--navy)', letterSpacing: '-0.03em', lineHeight: 1 }}
                 >
-                  {formatCurrency(hourlyRate, inputs.country)}
+                  {formatHourlyRate(hourlyRate, inputs.country)}
                   <span className="text-2xl ml-1" style={{ color: 'var(--slate-400)' }}>
                     /hr
                   </span>
