@@ -45,6 +45,9 @@ export const PROFESSIONS: Profession[] = [
   { slug: 'dental-hygienist', name: 'Dental Hygienist', median: 94260, blsLabel: 'Dental hygienists' },
   { slug: 'veterinarian', name: 'Veterinarian', median: 125510, blsLabel: 'Veterinarians' },
   { slug: 'psychologist', name: 'Psychologist', median: 94310, blsLabel: 'Clinical and counseling psychologists' },
+  { slug: 'massage-therapist', name: 'Massage Therapist', median: 57950, blsLabel: 'Massage therapists', note: 'Many massage therapists work part-time, so individual earnings vary widely with hours and tips.' },
+  { slug: 'it-support-specialist', name: 'IT Support Specialist', median: 60340, blsLabel: 'Computer user support specialists', note: 'Also known as help desk technicians or IT techs.' },
+  { slug: 'personal-assistant', name: 'Personal Assistant', median: 47460, blsLabel: 'Secretaries and administrative assistants, except legal, medical and executive', note: 'BLS groups personal assistants with administrative assistants; executive assistants earn a higher median of about $74,000.' },
 ]
 
 export function getProfession(slug: string): Profession | undefined {

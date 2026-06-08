@@ -6,8 +6,7 @@ import { PROFESSIONS } from '../../lib/professions'
 
 export const metadata: Metadata = {
   title: 'Salary After Tax by Profession (US, 2025)',
-  description:
-    'Take-home pay after tax for 28 common US professions — from nurses and teachers to software engineers and doctors. Median salaries from the BLS, take-home computed for 2025.',
+  description: `Take-home pay after tax for ${PROFESSIONS.length} common US professions — from nurses and teachers to software engineers and doctors. Median salaries from the BLS, take-home computed for 2025.`,
   alternates: { canonical: '/professions' },
 }
 
@@ -23,7 +22,7 @@ export default function ProfessionsPage() {
         Salary After Tax by Profession
       </h1>
       <p className="text-base mt-4 leading-relaxed" style={{ color: 'var(--slate-600)' }}>
-        What does each job actually take home after tax? Below are 28 common US professions with their
+        What does each job actually take home after tax? Below are {PROFESSIONS.length} common US professions with their
         median salary and estimated take-home pay (single filer, no state income tax). Tap any role for
         a full breakdown.
       </p>
