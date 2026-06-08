@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Clock, RefreshCcw, GitCompare, Globe, ArrowRight } from 'lucide-react'
+import { Clock, CalendarDays, RefreshCcw, GitCompare, Globe, ArrowRight } from 'lucide-react'
 
 interface CalcCard {
   icon: React.ComponentType<{ className?: string }>
@@ -14,6 +14,12 @@ const CARDS: CalcCard[] = [
     title: 'Hourly Calculator',
     description: 'Turn an hourly wage into annual, monthly and weekly take-home pay.',
     href: '/hourly',
+  },
+  {
+    icon: CalendarDays,
+    title: 'Monthly Calculator',
+    description: 'See what monthly pay is per year — and your take-home after tax.',
+    href: '/monthly',
   },
   {
     icon: RefreshCcw,
@@ -48,7 +54,7 @@ export default function MoreCalculators() {
         Free tools to plan every angle of your pay.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
         {CARDS.map(({ icon: Icon, title, description, href }) => (
           <Link
             key={href}

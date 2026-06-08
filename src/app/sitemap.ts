@@ -12,6 +12,7 @@ import {
 import { GUIDES } from '../lib/guides'
 import { PROFESSIONS } from '../lib/professions'
 import { REVERSE_MONTHLY, REVERSE_ANNUAL, reverseSlug } from '../lib/reverse'
+import { MONTHLY_AMOUNTS, monthlySlug } from '../lib/monthly'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://salarycalcnet.com'
 
@@ -30,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   push('/au', 0.8)
   push('/ca', 0.8)
   push('/hourly', 0.7)
+  push('/monthly', 0.7)
   push('/reverse', 0.7)
   push('/compare', 0.7)
   push('/about', 0.4)
@@ -67,6 +69,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Programmatic hourly-rate landing pages
   for (const rate of HOURLY_RATES) push(`/hourly/${rate}`, 0.5)
+
+  // Programmatic monthly-pay landing pages
+  for (const amount of MONTHLY_AMOUNTS) push(`/monthly/${monthlySlug(amount)}`, 0.5)
 
   return entries
 }
